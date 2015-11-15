@@ -1,0 +1,17 @@
+{
+  "name": "Benitomo",
+  "version": "0.0.1",
+  "description": "Paquetes del frontend para el proyecto Benitomo",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Ing. J. Marcelo Hidalgo L."
+  ],
+  "license": "MIT",
+  "homepage": "benitomo.app",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "bootstrap-material-design": "~0.3.0"
+  }
+}
