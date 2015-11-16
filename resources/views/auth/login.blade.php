@@ -4,21 +4,14 @@
 
     <div class="container-fluid">
 
+        {{--!! Html::image('img/auto_1.png', "Logo_auto",array('height'=>'100','width'=>'100')) !!--}}
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">Iniciar sesion</div>
                     <div class="panel-body">
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger text-center">
-                                <strong>Ups!</strong> Las credenciales que ingresaste no coinciden con nuestros registros.<br><br>
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
+
 
                         {!! Form::open(['url' => 'auth/login', 'role' => 'form', 'class' => 'form-horizontal']) !!}
 
@@ -62,4 +55,4 @@
         </div>
 
     </div>
-@stop
+@endsection
