@@ -1,0 +1,53 @@
+.first-level{
+line-height:40px;
+font-size:14px;
+font-size:1.4rem;
+z-index:402;
+}
+.first-level>li{
+position:relative;
+float:left;
+}
+.first-level>li>a{
+display:block;
+padding:0 18px;
+color:#fff;
+}
+.first-level>li>a:hover{
+color:#c80c1a;
+text-decoration:none;
+}
+
+#MenuPrincipal{
+	padding: 0px; 
+	border: 0px; 
+	font-family: 'franklin';
+	font-size:20px;
+	
+}
+
+.barraTitulo{
+
+	/*height: 35px;*/
+	border-left: 5px solid #C80C1A;
+	border-bottom: 1px solid #C6C6C6;
+	background-color: #eaeaeb;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding: 7px;
+	color: #000;
+	font-family: 'franklin';
+	font-size: 18px;
+
+}
+
+/*#menu_ul >li >a >b{*/
+
+
+	/*transform:scaleY(5); /* W3C */
+    /*-webkit-transform:scaleY(5); /* Safari and Chrome */
+    /*-moz-transform:scaleY(5); /* Firefox */
+    /*-ms-transform:scaleY(5); /* IE 9 */
+    /*-o-transform:scaleY(5); /* Opera */
+
+/*}*/
