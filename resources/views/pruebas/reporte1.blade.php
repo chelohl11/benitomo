@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Laravel 5.1</title>
-</head>
-<body>
+@extends('layouts/master/template')
+
+@section('contenido')
 	Esto esta muy bueno... gracias por su visita {{$nombre}}.
 
     @if($nombre!='')
@@ -13,6 +9,4 @@
          No existe
     @endif
 
-
-</body>
-</html>
+@endsection

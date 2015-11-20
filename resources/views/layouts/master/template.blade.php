@@ -6,13 +6,16 @@
 	<meta name="Autor" content="Marcelo Hidalgo" />
 	<meta name="Descripcion" content="Sistema de Colegiados" />
 	{!! Html::style('bower_components/bootstrap/dist/css/bootstrap.css') !!}
-	{!! Html::style('css/starter-template.css') !!}
-	{{--!! Html::style('bower_components/bootstrap-material-design/dist/css/material.min.css') !!}
-	{!! Html::style('bower_components/bootstrap-material-design/dist/css/ripples.min.css') !!}
-	{!! Html::style('bower_components/bootstrap-material-design/dist/css/material-wfont.min.css') !!--}}
+    {!! Html::style('css/fuente.css') !!}
+    {!! Html::style('css/first-level.css') !!}
+
+	{{--!! Html::style('css/starter-template.css') !!--}}
+	{{--!! Html::style('bower_components/bootstrap-material-design/dist/css/material.min.css') !!--}}
+	{{--!! Html::style('bower_components/bootstrap-material-design/dist/css/ripples.min.css') !!--}}
+	{{--!! Html::style('bower_components/bootstrap-material-design/dist/css/material-wfont.min.css') !!--}}
 
 </head>
-<body style="background-image: url('{{ asset('img/fondo.png') }}');">
+<body style="background-image: url('{{ asset('img/fondo.png') }}')">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,11 +36,7 @@
 
                     @if(Auth::check())
                         <div class="form-group">
-                            {if Session::get('level') neq 4}
-                            <a href="#" class="btn"><i class="glyphicon glyphicon-fire"> </i> Administrar</a>
-                            {else}
-                            <a href="#" class="btn"><i class="glyphicon glyphicon-fire"> </i> Afiliado</a>
-                            {/if}
+                        <!--Completar con el if para ver que link mostrar si hay roles de usuario  -->
 
                             <a href="#" class="btn"><i class="glyphicon glyphicon-remove-sign"> </i> logout</a>
                         </div>
@@ -103,15 +102,15 @@
 
 
 
-                <div class="col-md-8" style="background-image: url('{{ asset('img/buscador.png') }}'); background-repeat: no-repeat; background-position: bottom right; padding-bottom: 10px;">
+                <div class="col-md-8" style="background-image: url('{{ asset('img/buscador.png') }}'); background-repeat: no-repeat; background-position: bottom right; padding-bottom: 10px; ">
                     <br>
                     <br>
                     <br>
                     <br>
                     <br>
                     <form name="buscador" id="buscador" style="text-align: right;">
-                        <input type="text" id="buscador" name="buscador" placeholder="Buscar...">
-                        <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+                        <input type="text" size="18" id="buscador" name="buscador" placeholder="Buscar...">
+                        <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
                             <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                         </button>
                     </form>
@@ -202,9 +201,10 @@
     <!-- Fin contenedor principal blanco -->
 
 
-	
-	{!! Html::script('bower_components/jquery/dist/jquery.js') !!}
+
+    {!! Html::script('bower_components/jquery/dist/jquery.js') !!}
 	{!! Html::script('bower_components/bootstrap/dist/js/bootstrap.js') !!}
+
 	{{--!! Html::script('bower_components/bootstrap-material-design/dist/js/ripples.min.js') !!}
 	{!! Html::script('bower_components/bootstrap-material-design/dist/js/material.min.js') !!--}}
 	
